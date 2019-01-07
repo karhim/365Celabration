@@ -1,0 +1,42 @@
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\ApplicationInsights.config
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\csc.exe
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\System.Collections.Immutable.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\vbc.exe
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\VBCSCompiler.exe
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\roslyn\VBCSCompiler.exe.config
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Company.dll.config
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Company.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Company.pdb
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.Web.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.WindowsServer.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.ApplicationInsights.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.Web.xml
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.AI.WindowsServer.xml
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.ApplicationInsights.xml
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\obj\Debug\Company.csprojResolveAssemblyReference.cache
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\obj\Debug\Company.dll
+c:\users\lim\documents\visual studio 2015\Projects\Company\Company\obj\Debug\Company.pdb
+C:\Users\LIM\Documents\Visual Studio 2015\Projects\Company\Company\bin\Newtonsoft.Json.dll
+C:\Users\LIM\Documents\Visual Studio 2015\Projects\Company\Company\bin\Newtonsoft.Json.pdb
+C:\Users\LIM\Documents\Visual Studio 2015\Projects\Company\Company\bin\Newtonsoft.Json.xml
+D:\Company (30-12)\Company\Company\obj\Debug\Company.csprojResolveAssemblyReference.cache
+D:\Company (30-12)\Company\Company\obj\Debug\Company.dll
+D:\Company (30-12)\Company\Company\obj\Debug\Company.pdb
+D:\365Celabration\Company\obj\Debug\Company.csprojResolveAssemblyReference.cache
+D:\365Celabration\Company\obj\Debug\Company.dll
+D:\365Celabration\Company\obj\Debug\Company.pdb
