@@ -32,8 +32,8 @@ namespace Company
 
         public void bindGV()
         {
-            gvPrograms.DataSource = DeserializeServices();
-            gvPrograms.DataBind();
+           // gvPrograms.DataSource = DeserializeServices();
+           // gvPrograms.DataBind();
         }
 
         protected void btnSignUp_Click(object sender, EventArgs e)
