@@ -19,16 +19,16 @@ namespace Company
             }
         }
 
-        public DataTable DeserializeServices()
-        {
-            Company.Supplier_WebService.WsServiceCatalogClient ws = new Supplier_WebService.WsServiceCatalogClient();
-            string json = ws.getAllServices();
+        //public DataTable DeserializeServices()
+        //{
+        //    Company.Supplier_WebService.WsServiceCatalogClient ws = new Supplier_WebService.WsServiceCatalogClient();
+        //    string json = ws.getAllServices();
 
-            var dataSet = JsonConvert.DeserializeObject<DataSet>(json);
-            var table = dataSet.Tables[0];
+        //    var dataSet = JsonConvert.DeserializeObject<DataSet>(json);
+        //    var table = dataSet.Tables[0];
 
-            return table;
-        }
+        //    return table;
+        //}
 
         public void bindGV()
         {

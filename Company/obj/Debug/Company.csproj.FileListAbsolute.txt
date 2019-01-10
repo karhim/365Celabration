@@ -37,8 +37,7 @@ C:\Users\LIM\Documents\Visual Studio 2015\Projects\Company\Company\bin\Newtonsof
 D:\Company (30-12)\Company\Company\obj\Debug\Company.csprojResolveAssemblyReference.cache
 D:\Company (30-12)\Company\Company\obj\Debug\Company.dll
 D:\Company (30-12)\Company\Company\obj\Debug\Company.pdb
-D:\365Celabration\Company\obj\Debug\Company.dll
-D:\365Celabration\Company\obj\Debug\Company.pdb
+D:\365Celabration\Company\obj\Debug\Company.csprojResolveAssemblyReference.cache
 D:\365Celabration\Company\bin\ApplicationInsights.config
 D:\365Celabration\Company\bin\roslyn\csc.exe
 D:\365Celabration\Company\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -73,4 +72,5 @@ D:\365Celabration\Company\bin\Microsoft.ApplicationInsights.xml
 D:\365Celabration\Company\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\365Celabration\Company\bin\Newtonsoft.Json.pdb
 D:\365Celabration\Company\bin\Newtonsoft.Json.xml
-D:\365Celabration\Company\obj\Debug\Company.csprojResolveAssemblyReference.cache
+D:\365Celabration\Company\obj\Debug\Company.dll
+D:\365Celabration\Company\obj\Debug\Company.pdb
