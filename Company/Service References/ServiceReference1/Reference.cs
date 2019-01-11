@@ -15,23 +15,11 @@ namespace Company.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IWsServiceCatalog")]
     public interface IWsServiceCatalog {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getAllServices", ReplyAction="http://tempuri.org/IWsServiceCatalog/getAllServicesResponse")]
-        string getAllServices();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getAllService", ReplyAction="http://tempuri.org/IWsServiceCatalog/getAllServiceResponse")]
+        System.Data.DataSet getAllService();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getAllServices", ReplyAction="http://tempuri.org/IWsServiceCatalog/getAllServicesResponse")]
-        System.Threading.Tasks.Task<string> getAllServicesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getServiceNames", ReplyAction="http://tempuri.org/IWsServiceCatalog/getServiceNamesResponse")]
-        string getServiceNames();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getServiceNames", ReplyAction="http://tempuri.org/IWsServiceCatalog/getServiceNamesResponse")]
-        System.Threading.Tasks.Task<string> getServiceNamesAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getServiceID", ReplyAction="http://tempuri.org/IWsServiceCatalog/getServiceIDResponse")]
-        string getServiceID(string name);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getServiceID", ReplyAction="http://tempuri.org/IWsServiceCatalog/getServiceIDResponse")]
-        System.Threading.Tasks.Task<string> getServiceIDAsync(string name);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getAllService", ReplyAction="http://tempuri.org/IWsServiceCatalog/getAllServiceResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> getAllServiceAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/SelectInvoiceDate", ReplyAction="http://tempuri.org/IWsServiceCatalog/SelectInvoiceDateResponse")]
         System.Data.DataSet SelectInvoiceDate();
@@ -73,28 +61,12 @@ namespace Company.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public string getAllServices() {
-            return base.Channel.getAllServices();
+        public System.Data.DataSet getAllService() {
+            return base.Channel.getAllService();
         }
         
-        public System.Threading.Tasks.Task<string> getAllServicesAsync() {
-            return base.Channel.getAllServicesAsync();
-        }
-        
-        public string getServiceNames() {
-            return base.Channel.getServiceNames();
-        }
-        
-        public System.Threading.Tasks.Task<string> getServiceNamesAsync() {
-            return base.Channel.getServiceNamesAsync();
-        }
-        
-        public string getServiceID(string name) {
-            return base.Channel.getServiceID(name);
-        }
-        
-        public System.Threading.Tasks.Task<string> getServiceIDAsync(string name) {
-            return base.Channel.getServiceIDAsync(name);
+        public System.Threading.Tasks.Task<System.Data.DataSet> getAllServiceAsync() {
+            return base.Channel.getAllServiceAsync();
         }
         
         public System.Data.DataSet SelectInvoiceDate() {

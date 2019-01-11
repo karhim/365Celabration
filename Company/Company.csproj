@@ -151,6 +151,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLLinvoice.cs" />
+    <Compile Include="BLL\BLLService.cs" />
+    <Compile Include="DAL\DALService.cs" />
     <Compile Include="DAL\DALinvoice.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

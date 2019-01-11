@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Company.BLL;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -15,30 +16,16 @@ namespace Company
         {
             if (IsPostBack == false)
             {
-                bindGV();
+                bindgridview();
             }
         }
-
-        //public DataTable DeserializeServices()
-        //{
-        //    Company.Supplier_WebService.WsServiceCatalogClient ws = new Supplier_WebService.WsServiceCatalogClient();
-        //    string json = ws.getAllServices();
-
-        //    var dataSet = JsonConvert.DeserializeObject<DataSet>(json);
-        //    var table = dataSet.Tables[0];
-
-        //    return table;
-        //}
-
-        public void bindGV()
+        private void bindgridview()
         {
-           // gvPrograms.DataSource = DeserializeServices();
-           // gvPrograms.DataBind();
-        }
-
-        protected void btnSignUp_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ViewServices.aspx");
+            BLLService bindgrid = new BLLService();
+            DataSet ds;
+            ds = bindgrid.getAllService();
+            gvServices.DataSource = ds;
+            gvServices.DataBind();
         }
     }
 }

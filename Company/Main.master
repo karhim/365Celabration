@@ -36,7 +36,7 @@
         </asp:ScriptManager>
         <!-- NAVBAR -->
         <header>
-            <nav>
+            <nav class ="red lighten-1">
                 <div class="nav-wrapper">
                     <div class="row">
                         <div class="col s12">
