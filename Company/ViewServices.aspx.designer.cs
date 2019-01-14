@@ -13,6 +13,24 @@ namespace Company {
     public partial class ViewServices {
         
         /// <summary>
+        /// ddl_ServiceType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_ServiceType;
+        
+        /// <summary>
+        /// rfv_ddl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_ddl;
+        
+        /// <summary>
         /// gvServices control.
         /// </summary>
         /// <remarks>

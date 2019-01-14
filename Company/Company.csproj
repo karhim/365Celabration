@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -119,6 +120,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Company.svc" />
+    <Content Include="ViewCustomerRequest.aspx" />
+    <Content Include="ViewServiceDetails.aspx" />
     <Content Include="WebForm1.aspx" />
     <None Include="Service References\ServiceReference1\WsServiceCatalog.wsdl" />
     <None Include="Service References\ServiceReference1\WsServiceCatalog.xsd">
@@ -143,7 +147,6 @@
       <DependentUpon>Admin.mdf</DependentUpon>
     </Content>
     <Content Include="Index.aspx" />
-    <Content Include="ManageServices.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="ViewServices.aspx" />
@@ -172,12 +175,9 @@
     <Compile Include="InvoiceStatus.aspx.designer.cs">
       <DependentUpon>InvoiceStatus.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IService1.cs" />
     <Compile Include="Main.master.cs">
       <DependentUpon>Main.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ManageServices.aspx.cs">
-      <DependentUpon>ManageServices.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -185,6 +185,23 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Company.svc.cs">
+      <DependentUpon>Company.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomerRequest.aspx.cs">
+      <DependentUpon>ViewCustomerRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCustomerRequest.aspx.designer.cs">
+      <DependentUpon>ViewCustomerRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewServiceDetails.aspx.cs">
+      <DependentUpon>ViewServiceDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewServiceDetails.aspx.designer.cs">
+      <DependentUpon>ViewServiceDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewServices.aspx.cs">
       <DependentUpon>ViewServices.aspx</DependentUpon>
