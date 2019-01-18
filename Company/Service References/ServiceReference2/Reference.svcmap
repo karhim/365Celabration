@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d42313e3-b8a2-4e61-9d07-68591e184e1a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51849/WsServiceCatalog2.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsServiceCatalog2.wsdl" MetadataType="Wsdl" ID="8a467762-afc3-4581-92ba-2e97e08089ea" SourceId="1" SourceUrl="http://localhost:51849/WsServiceCatalog2.svc?wsdl" />
+    <MetadataFile FileName="WsServiceCatalog2.xsd" MetadataType="Schema" ID="a3eb5334-2c91-4888-822a-9e5972f680d5" SourceId="1" SourceUrl="http://localhost:51849/WsServiceCatalog2.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsServiceCatalog21.xsd" MetadataType="Schema" ID="880de677-fa03-4c90-b5c7-c996f4887fc8" SourceId="1" SourceUrl="http://localhost:51849/WsServiceCatalog2.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsServiceCatalog2.disco" MetadataType="Disco" ID="fdf8d917-2243-4c80-8779-ab62ebce8215" SourceId="1" SourceUrl="http://localhost:51849/WsServiceCatalog2.svc?disco" />
+    <MetadataFile FileName="WsServiceCatalog22.xsd" MetadataType="Schema" ID="87eeda44-5672-4546-aad2-c6f2e03a61ff" SourceId="1" SourceUrl="http://localhost:51849/WsServiceCatalog2.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

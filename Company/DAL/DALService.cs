@@ -1,4 +1,5 @@
 ﻿using Company.ServiceReference1;
+using Company.ServiceReference2;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -15,10 +16,17 @@ namespace Company.DAL
             return ws.getAllService();
         }
 
-        public DataSet SelectInvoiceDetails()
+        public DataSet getAllService2()
+        {
+          WsServiceCatalog2Client ws = new WsServiceCatalog2Client();
+            return ws.getAllService2();
+        }
+
+        public DataSet getVendorDetails()
         {
             WsServiceCatalogClient ws = new WsServiceCatalogClient();
-            return ws.SelectInvoiceDetails();
+            return ws.getVendorDetails();
         }
+
     }
 }

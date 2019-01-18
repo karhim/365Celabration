@@ -105,8 +105,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateAppointment.aspx" />
+    <Content Include="CustomerForm.aspx" />
     <Content Include="invoicepage1.aspx" />
     <Content Include="InvoiceStatus.aspx" />
+    <Content Include="ManageAppointment.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -120,7 +123,14 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Company.svc" />
+    <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference2\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference2\WsServiceCatalog2.disco" />
+    <Content Include="testing.aspx" />
     <Content Include="ViewCustomerRequest.aspx" />
     <Content Include="ViewServiceDetails.aspx" />
     <Content Include="WebForm1.aspx" />
@@ -134,12 +144,23 @@
     <None Include="Service References\ServiceReference1\WsServiceCatalog2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReference2\WsServiceCatalog2.wsdl" />
+    <None Include="Service References\ServiceReference2\WsServiceCatalog2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\WsServiceCatalog21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\WsServiceCatalog22.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="WebsiteIndex.Master" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Admin.mdf" />
@@ -155,6 +176,20 @@
   <ItemGroup>
     <Compile Include="BLL\BLLinvoice.cs" />
     <Compile Include="BLL\BLLService.cs" />
+    <Compile Include="CreateAppointment.aspx.cs">
+      <DependentUpon>CreateAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateAppointment.aspx.designer.cs">
+      <DependentUpon>CreateAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForm.aspx.cs">
+      <DependentUpon>CustomerForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.aspx.designer.cs">
+      <DependentUpon>CustomerForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DAL\DALService.cs" />
     <Compile Include="DAL\DALinvoice.cs" />
     <Compile Include="Index.aspx.cs">
@@ -175,10 +210,16 @@
     <Compile Include="InvoiceStatus.aspx.designer.cs">
       <DependentUpon>InvoiceStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="IService1.cs" />
     <Compile Include="Main.master.cs">
       <DependentUpon>Main.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageAppointment.aspx.cs">
+      <DependentUpon>ManageAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageAppointment.aspx.designer.cs">
+      <DependentUpon>ManageAppointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ServiceReference1\Reference.cs">
@@ -186,8 +227,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Company.svc.cs">
-      <DependentUpon>Company.svc</DependentUpon>
+    <Compile Include="Service References\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="testing.aspx.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testing.aspx.designer.cs">
+      <DependentUpon>testing.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewCustomerRequest.aspx.cs">
       <DependentUpon>ViewCustomerRequest.aspx</DependentUpon>
@@ -217,6 +267,13 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebsiteIndex.Master.cs">
+      <DependentUpon>WebsiteIndex.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebsiteIndex.Master.designer.cs">
+      <DependentUpon>WebsiteIndex.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
@@ -229,6 +286,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference2\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

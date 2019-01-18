@@ -13,24 +13,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
      <!-- Section: Icon Boxes----> 
             <section class="section section-icons grey lighten-4 center">
                 <div class="container">
@@ -49,7 +31,7 @@
                                 <h5>Appointments</h5>
 
                                 <a class="waves-effect waves-light btn">Manage</a>
-                                <a class="waves-effect waves-light btn">Create</a>
+                                
 
                             </div>
                         </div>

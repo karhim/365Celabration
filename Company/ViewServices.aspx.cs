@@ -12,6 +12,10 @@ namespace Company
 {
     public partial class ViewServices : System.Web.UI.Page
     {
+       
+
+        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack == false)
@@ -21,11 +25,45 @@ namespace Company
         }
         private void bindgridview()
         {
-            BLLService bindgrid = new BLLService();
-            DataSet ds;
-            ds = bindgrid.getAllService();
-            gvServices.DataSource = ds;
-            gvServices.DataBind();
+            
         }
+
+        protected void ddlVendorList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddl_VendorList.SelectedIndex == 2)
+            {
+                BLLService bindgrid = new BLLService();
+
+                DataSet ds;
+                ds = bindgrid.getAllService();
+                gvServices.DataSource = ds;
+                gvServices.DataBind();
+            }
+
+            else if (ddl_VendorList.SelectedIndex == 3)
+            {
+                BLLService bindgrid = new BLLService();
+
+                DataSet ds;
+                ds = bindgrid.getAllService2();
+
+                gvServices.DataSource = ds;
+                gvServices.DataBind();
+            }
+
+            else 
+            {
+              
+            }
+
+
+
+
+
+        }
+
+
+
     }
-}
+    }
+

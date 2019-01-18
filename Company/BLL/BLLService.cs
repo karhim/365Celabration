@@ -16,10 +16,19 @@ namespace Company.BLL
             return serv.getAllService();
         }
 
-        public DataSet SelectInvoiceDetails()
+        public DataSet getAllService2()
         {
-            DALinvoice iv = new DALinvoice();
-            return iv.SelectInvoiceDetails();
+            DALService serv = new DALService();
+            return serv.getAllService2();
         }
+
+        public DataSet getVendorDetails()
+        {
+            DALService serv = new DALService();
+            return serv.getVendorDetails();
+        }
+
+
+
     }
 }

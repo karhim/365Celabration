@@ -21,6 +21,12 @@ namespace Company.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getAllService", ReplyAction="http://tempuri.org/IWsServiceCatalog/getAllServiceResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> getAllServiceAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getVendorDetails", ReplyAction="http://tempuri.org/IWsServiceCatalog/getVendorDetailsResponse")]
+        System.Data.DataSet getVendorDetails();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/getVendorDetails", ReplyAction="http://tempuri.org/IWsServiceCatalog/getVendorDetailsResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> getVendorDetailsAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsServiceCatalog/SelectInvoiceDate", ReplyAction="http://tempuri.org/IWsServiceCatalog/SelectInvoiceDateResponse")]
         System.Data.DataSet SelectInvoiceDate();
         
@@ -67,6 +73,14 @@ namespace Company.ServiceReference1 {
         
         public System.Threading.Tasks.Task<System.Data.DataSet> getAllServiceAsync() {
             return base.Channel.getAllServiceAsync();
+        }
+        
+        public System.Data.DataSet getVendorDetails() {
+            return base.Channel.getVendorDetails();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> getVendorDetailsAsync() {
+            return base.Channel.getVendorDetailsAsync();
         }
         
         public System.Data.DataSet SelectInvoiceDate() {

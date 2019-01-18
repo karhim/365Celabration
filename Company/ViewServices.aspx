@@ -7,19 +7,20 @@
 
 
     <div class="container white z-depth-2">
+
         <ul class="tabs red lighten-1 center  ">
             <li class="tab col s6  "><a class="white-text">Service Overview</a></li>
         </ul>
         <div class="row">
                         <div class="input-field col s12">
-                            <asp:DropDownList ID="ddl_ServiceType" CssClass="dropdown-trigger2 btn-flat grey lighten-2 grey-text text-darken-1" runat="server">
-                                <asp:ListItem Text="Select Service Type" Value="0" Selected="True"></asp:ListItem>
-                                <asp:ListItem Value="1">Catering & Beverages</asp:ListItem>
-                                <asp:ListItem Value="2">Decoration</asp:ListItem>
-                                <asp:ListItem Value="3">Entertainment</asp:ListItem>
-
+                            <asp:DropDownList ID="ddl_VendorList" CssClass="dropdown-trigger2 btn-flat grey lighten-2 grey-text text-darken-1"  AutoPostBack="True"  runat="server" Height="25px" onselectedindexchanged="ddlVendorList_SelectedIndexChanged" Width="206px ">
+                                <asp:ListItem Text="Select Vendor" Value="0" Selected="True"></asp:ListItem>
+                                <asp:ListItem Value="1">All Vendors</asp:ListItem>
+                                <asp:ListItem Value="2">Catering Vendor</asp:ListItem>
+                                <asp:ListItem Value="3">Decoration Vendor</asp:ListItem>
+                                <asp:ListItem Value="4">Entertainment Vendor</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="rfv_ddl" InitialValue="0" EnableClientScript="false" ControlToValidate="ddl_ServiceType" Display="Dynamic" ForeColor="Red" runat="server" ErrorMessage="Please select one category"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="rfv_ddl" InitialValue="0" EnableClientScript="false" ControlToValidate="ddl_VendorList" Display="Dynamic" ForeColor="Red" runat="server" ErrorMessage="Please select one category"></asp:RequiredFieldValidator>
                         </div>
                     </div>
         <asp:GridView ID="gvServices" runat="server" AutoGenerateColumns="False">
@@ -33,6 +34,7 @@
                 <asp:CommandField ShowSelectButton="True" />
             </Columns>
         </asp:GridView> 
+
 
     </div>
 
